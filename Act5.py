@@ -29,11 +29,11 @@ def main():
         print("[Q] - Quit")
 
         choice = input("Enter your choice: ").strip().upper()
-
+        #Quit program
         if choice == 'Q':
             print("Exiting program. Goodbye!")
             break
-
+        #Divide, Exponent, Remainder function
         if choice in ['D', 'E', 'R']:
             try:
                 num1 = int(input("Enter first number: "))
@@ -48,7 +48,7 @@ def main():
                 result = exponentiate(num1, num2)
             elif choice == 'R':
                 result = remainder(num1, num2)
-
+        #Summation function
         elif choice == 'F':
             try:
                 start = int(input("Enter the starting number: "))
